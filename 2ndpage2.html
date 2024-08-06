@@ -1,0 +1,91 @@
+
+ <!DOCTYPE html>
+<html >
+  <head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link rel="stylesheet" href="style1.css" />
+
+<style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .non{
+          margin-top:50px;
+        }
+        .icon{
+      color:black;
+      text-decoration : none;
+      padding: 0px;
+      }
+      .back-button {
+  margin-right: auto; /* Pushes the "Back" button to the extreme left */
+  margin-right:1000px;
+}
+
+
+/* Add additional styling for icons if needed */
+
+</style>
+  </head>
+  
+  <body link="lightblue"  alink="lightblue">
+    
+<nav>
+  <ul class="top-icons">
+    <li class="back-button"><a href="#" class="icon-link icon"><i class="fas fa-arrow-left"></i> </a></li>
+    <li><a href="firsts.html" class="icon-link icon"><i class="fas fa-home"></i> HOME</a></li>
+    <li><a href="aboutus.html" class="icon-link icon"><i class="fas fa-info-circle"></i> About</a></li>
+    <li><a href="contactus2.html" class="icon-link icon"><i class="fas fa-envelope"></i>Contact Us</a></li>
+  </ul>
+</nav>
+  
+    <div class="main-container">
+     <video autoplay loop muted plays-inline>
+    <source src="WhatsApp Video 2023-09-07 at 11.19.50 AM.mp4" type="video/mp4">
+    </video>
+      <div class="cards"><a href="fdetails.php" style="text-decoration:none"><img src="faculty.jpg" height="75%" width="85%"><h2 class="icon-name">FACULTY</h2></a></div>
+      <div class="cards"><a href="scholarship.php" style="text-decoration:none"><img src="sch.webp" height="70.5%" width="70.5%"/><h2 class="icon-name">SCHOLARSHIP</h2></a></div>
+      <div class="cards"><a href="labassistant.php"style="text-decoration:none "class="non"><img src="non.png" height="55.5%" width="75.5%" margin="5px"/><h2 class="icon-name">LAB ASSISTANTS</h2></a></div>
+      <div class="cards"><a href="swo.php"style="text-decoration:none"><img src="oss_logo_rev.jpg" height="75%" width="95%"/><h2 class="icon-name">SWO</h2></a></div>
+      <div class="cards"><a href="hospital.php"style="text-decoration:none"><img src="hs.jpg" height="80%"  width="100.5%"><h2 class="icon-name">HOSPITAL</h2></a></div>
+      <div class="cards">
+      <div class="dropdown">
+        <a href="#"><img src="care.jpg"height="80%" width="100%"/><a href="#"style="text-decoration:none"><h2 class="icon-name">WARDENS</h2></a></a>
+        <div class="dropdown-content">
+            <a href="#"></a>
+            <a href="caretakersboys.php">Boys</a>
+            <a href="caretakersgirls.php">Girls</a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup form</title>
+    <link rel="stylesheet" type="text/css" href="faclogsign.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <style>
+    .icon{
+          color:black;
+          text-decoration : none;
+    }
+    .back-button {
+      margin-right:550px;
+    }
+    .top-icons{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:right;
+    }
+    .top-icons li{
+    display:inline-block;
+    margin-left:10px;
+    }
+    .top-icons i{
+    font-size:24px;
+    color:#333;
+    }
+    nav
+    {
+    position:absolute;
+    top:0;
+    right:0;
+    padding:15px;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="form-box">
+            <header>
+                <nav>
+                    <ul class="top-icons">
+                      <li class="back-button"><a href="facultylogin.html" class="icon-link icon"><i class="fas fa-arrow-left"></i> </a></li>
+                      </ul>
+                  </nav>
+                </header>
+                <br><br><br><br><br> 
+            <h1 id="title">Signup</h1>
+            <form action="facsignup.php" method="post">
+                <div class="input-group">
+                    <label>Enter Your Name: </label>
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="username" required />
+                    </div>
+                    <label>Enter Your Email:</label>
+                    <div class="input-field">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" name="email" required />
+                    </div>
+                    <label>Enter password:</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="password" required>
+                    </div>
+                    <label>Confirm password:</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="conf_password" required>
+                    </div>
+                    <label>Choose Dept:</label>
+                    <select name="dept" id="dept">
+                        <option value="cse">CSE</option>
+                        <option value="ece">ECE</option>
+                        <option value="eee">EEE</option>
+                        <option value="mech">MECH</option>
+                        <option value="civil">CIVIL</option>
+                        <option value="non teaching staff">Non Teaching Staff</option>
+                    </select>
+                    <label>Role:</label>
+                    <div class="input-field">
+                        <i class="fa-brands fa-r-project"></i>
+                        <select name="role" id="role" required>
+                            <option value="warden">Warden</option>
+                            <option value="faculty">Faculty</option>
+                            <option value="lab_assistant">Lab Assistant</option>
+                            <option value="caretaker">Caretaker</option>
+                            <option value="hospital_staff">Hospital Staff</option>
+                            <option value="swo">SWO</option>
+                            <option value="scholarship">Scholarship</option>
+                           
+
+                        </select>
+                    </div>
+                    <div class="btn-field">
+                        <button type="submit">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <title>loginform</title>
+	  <link rel="stylesheet" type="text/css" href="faclogsign.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+<style>
+  .icon{
+        color:black;
+        text-decoration : none;
+  }
+  .back-button {
+    margin-right:1000px;
+  }
+  .top-icons{
+  list-style:none;
+  margin:0;
+  padding:0;
+  text-align:right;
+  }
+  .top-icons li{
+  display:inline-block;
+  margin-left:10px;
+  }
+  .top-icons i{
+  font-size:24px;
+  color:#333;
+  }
+  nav
+  {
+  position:absolute;
+  top:0;
+  right:0;
+  padding:15px;
+  }
+  </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+          <ul class="top-icons">
+            <li class="back-button"><a href="firsts.html" class="icon-link icon"><i class="fas fa-arrow-left"></i> </a></li>
+            <li><a href="firsts.html" class="icon-link icon"><i class="fas fa-home"></i> HOME</a></li>
+            <li><a href="aboutus.html" class="icon-link icon"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="contactus2.html" class="icon-link icon"><i class="fas fa-envelope"></i>Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <br><br><br><br><br>  
+    <h1>LOGIN</h1>
+    <form action='login.php' method="post">
+<div class="input-group">
+<label>Enter Your Email: </label>
+<div class="input-field" id="nameField">
+<i class="fa-solid fa-user"></i>
+<input type="text" name="email" required />
+</div>
+        <!-- <label>Enter Your Last Name: 
+<div class="input-field" id="nameField">
+<i class="fa-solid fa-user"></i>
+<input type="text" name="last-name" required /></label>
+</div> -->
+<label>Enter password:</label>
+<div class="input-field">
+<i class="fa-solid fa-lock"></i>
+<input type="password" name="password" required>
+</div>
+<!-- <label>Confirm password:</label>
+<div class="input-field">
+<i class="fa-solid fa-lock"></i>
+<input type="password">
+</div> -->
+<div class="btn-field">
+<button type="submit" >Login</button>
+</div>
+ <div class="recover">
+<a href="forget.php">forgot password</a>
+</div> 
+<div class="member">
+Not a member?<a href="fac.html">
+  REGISTER NOW
+</a>
+</div>
+</div>
+</form>
+</body>
+</html>
+
+   

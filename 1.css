@@ -1,0 +1,91 @@
+
+video{
+height:100vh;
+width:100vw;
+object-fit:cover;
+position:fixed;
+top:0;
+left:0;
+z-index:-999;
+}
+.top-icons{
+list-style:none;
+margin:0;
+padding:0;
+text-align:right;
+}
+.top-icons li{
+display:inline-block;
+margin-left:10px;
+}
+.top-icons i{
+font-size:24px;
+color:#333;
+}
+nav
+{
+position:absolute;
+top:0;
+right:0;
+padding:10px;
+}
+
+.loginbox{
+    background:#808080;
+    width:700px;
+   border-radius:20px;
+    box-sizing:border-box;
+           
+}
+.center form{
+    padding:0 40px;
+    box-sizing:border-box;
+    }
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width:100%;
+  padding: 20px;
+}
+
+.background-image{
+
+background-image:url("/home/shaik_mohammad_baqee/Music/SE PROJRCT/WhatsApp Image 2023-09-12 at 10.29.43 PM.jpeg" );
+background-size:cover;
+background-repeat:no-repeat;
+height:100vh;
+}
+ 
+.image figcaption
+{
+position:absolute;
+top:50%;
+bottom:50%;
+left:40%;
+}
+input[type="radio"]
+{
+width:25px;
+height:25px;
+}
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+.text-center{
+text-align:center;
+}
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+} 

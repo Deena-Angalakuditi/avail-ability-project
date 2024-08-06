@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <style>
+    table,
+    th,
+    td {
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+th,td {
+    text-align: center;
+}
+    th,
+    td {
+        padding: 40px;
+    }
+    .blink
+    {
+    animation:blinker 1.5s liner infinite;
+    color:;
+    font-family:sans-serif;
+    }
+    table
+    {
+    background-color:rgba(0,0,255,0.3);
+    }
+    .top-icons{
+list-style:none;
+margin:0;
+padding:0;
+text-align:right;
+}
+.top-icons li{
+display:inline-block;
+margin-left:10px;
+}
+.top-icons i{
+font-size:24px;
+color:#333;
+}
+nav
+{
+position:absolute;
+top:0;
+right:0;
+padding:10px;
+}
+    
+    </style>
+</head>
+<body style="background-image:url('/home/shaik_mohammad_baqee/Music/SE PROJRCT/Untitled.jpeg');"> 
+   <header>
+<nav>
+<ul class="top-icons">
+            <li><a href="/home/shaik_mohammad_baqee/Music/SE PROJRCT/firsts.html" class="icon-link"><i class="fa-solid fa-house"></i> HOME</a></li>
+            <li><a href="about.html" class="icon-link"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="/home/shaik_mohammad_baqee/Music/SE PROJRCT/contactus.html" class="icon-link"><i class="fas fa-envelope"></i>Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+<h1 align="center" >RGUKT HOSPITAL SERVICE - SSN(ongole)</h1>
+<marquee  behavior="alternate" scrollamount="16"><h1 ><b> We Care For You Health</b></h1></font> </marquee>
+    <table style="margin-left:auto;margin-right:auto;text-align:center" border="10" > 
+        <tr>
+            <th>NAME</th>
+            <th>SHIFT</th>
+            <th>TIME</th>
+            <TH>STATUS</TH>
+        </tr>
+        <tr>
+            <td>SAM</td>
+            <td>MORNING SECTION</td>
+            <td>9:00 AM TO 4:00 PM</td>
+            <td><button type="button" id="myBtn" onclick="myFunction()"> Available</button></td>
+            
+        </tr>
+        <tr>
+            <td>ABHI</td>
+            <td>EVENING SECTION</td>
+            <td>4:00 PM TO 9:00 PM</td>
+           <td><button type="button" id="myBtn" onclick="myFunction()"> Available</button></td>
+        </tr>
+        <tr>
+            <td>Chris</td>
+            <td>NIGHT SECTION</td>
+            <td>9:00 PM  TO MORNING</td>
+            <td><button type="button" id="myBtn" onclick="myFunction()"> Available</button></td>
+        </tr>
+       
+    </table>
+    <script>
+    function myFunction(){
+    var x=document.getElementById("myBtn");
+    x.disabled=true;
+    }
+    </script>
+</body>
+</html>

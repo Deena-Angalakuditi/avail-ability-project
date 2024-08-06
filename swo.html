@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            text-align: center;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        /* Define CSS classes for each availability status */
+        .available {
+            background-color: green;
+        }
+
+        .engaged {
+            background-color: yellow;
+        }
+
+        .not-present {
+            background-color: red;
+        }
+
+        .icon-cell {
+            font-size: 18px;
+        }
+
+        .icon-link {
+            color: inherit;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="/home/shaik_mohammad_baqee/Music/SE PROJRCT/firsts.html" class="icon-link"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html" class="icon-link"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="/home/shaik_mohammad_baqee/Music/SE PROJRCT/contactus.html" class="icon-link"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<table>
+    <tr>
+        <th>Faculty Name</th>
+        <th>Role</th>
+        <th>Activity Status</th>
+        <th>contact info</th>
+    </tr>
+    <tr>
+        <td>Suguna Rao sir</td>
+<td> Dean</td>
+       <td class="available" onclick="changeStatus(this)">Available</td>
+<td>9490624608</td>
+    </tr>
+    <tr>
+        <td>Mrudhula madam</td>
+<td>SWO</td>
+        <td class="engaged" onclick="changeStatus(this)">Engaged</td>
+<td>6301488037</td>
+    </tr>
+    <tr>
+        <td>Sandhya</td>
+<td>SWO</td>
+        <td class="not-present" onclick="changeStatus(this)">Not Present</td>
+<td>xxxxxxxxxx</td>
+    </tr>
+</table>
+
+<script>
+    function changeStatus(cell) {
+        if (cell.classList.contains("available")) {
+            cell.classList.remove("available");
+            cell.classList.add("engaged");
+            cell.textContent = "Engaged";
+        } else if (cell.classList.contains("engaged")) {
+            cell.classList.remove("engaged");
+            cell.classList.add("not-present");
+            cell.textContent = "Not Present";
+        } else {
+            cell.classList.remove("not-present");
+            cell.classList.add("available");
+            cell.textContent = "Available";
+        }
+    }
+</script>
+
+</body>
+</html>
